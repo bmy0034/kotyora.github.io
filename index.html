@@ -1111,6 +1111,39 @@
       });
 
 
+      
+      document.addEventListener("DOMContentLoaded", function() {
+          // Get all button elements
+          var buttons = document.querySelectorAll('button');
+
+          // Iterate over each button
+          buttons.forEach(function(button) {
+              // Check if button text content matches "Campaigns"
+              if (button.textContent.trim() === "Campaigns") {
+                  // Add click event listener
+                  button.addEventListener("click", function(event) {
+                      // Prevent the default button behavior
+                      event.preventDefault();
+
+                      // Redirect the user to the Campaigns page
+                      window.location.href = "https://bmy.my.canva.site/kotyora#page-5";
+                  });
+              } 
+              // Check if button text content matches "About Us"
+              else if (button.textContent.trim() === "About Us") {
+                  // Add click event listener
+                  button.addEventListener("click", function(event) {
+                      // Prevent the default button behavior
+                      event.preventDefault();
+
+                      // Redirect the user to the About Us page
+                      window.location.href = "https://bmy.my.canva.site/kotyora#page-6";
+                  });
+              }
+          });
+      });
+
+
     </script>
 
 
